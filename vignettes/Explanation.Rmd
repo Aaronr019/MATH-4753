@@ -1,0 +1,58 @@
+---
+title: "What This Package Does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What This Package Does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(FALL224753rich0142)
+```
+
+# Introduction
+
+This is a package containing a variety of functions used in MATH 4753 in Fall of 2022.
+
+#Functions
+
+## First Function
+
+This function is a negative binomial probability distribution using the parameters: y = quantile, r = size, p = probability.
+
+```{r}
+FALL224753rich0142::myNegBin(10,3,0.4)
+```
+
+## Second Function
+
+This function creates a normal function graph with the shaded probability region using the parameters: mu = mean, sigma = standard deviation, a = upper bound of the region.
+
+```{r}
+FALL224753rich0142::myncurve(10,5,6)
+```
+
+## Third Function
+
+This function gives the number of tickets to be sold regarding a plane's overbooking problem along with other values using the parameters: N = number of flight seats, gamma = overbooking probability, p = show probability.
+
+```{r}
+FALL224753rich0142::ntickets(200,0.02,0.95)
+```
+
+## Fourth Function
+
+This function gives the binomial distribution using the central limit theorem using the parameters: n = sample, iter = iterations, p = probability.
+
+```{r}
+FALL224753rich0142::mycltb(4,10000,.3)
+```
+

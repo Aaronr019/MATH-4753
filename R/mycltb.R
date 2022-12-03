@@ -1,4 +1,4 @@
-#' Central Limit Theorem from a Binomail Distribution
+#' Central Limit Theorem from a Binomial Distribution
 #'
 #' @param n the sample
 #' @param iter the number of iterations
