@@ -42,10 +42,10 @@ FALL224753rich0142::myncurve(10,5,6)
 
 ## Third Function
 
-This function gives the number of tickets to be sold regarding a plane's overbooking problem along with other values using the parameters: N = number of flight seats, gamma = overbooking probability, p = show probability.
+This function gives the histogram of the mean using bootstrapping with interval bounds using the parameters: iter = iterations, x = sample, fun = function, alpha = 1-confidence, cx = cx value.
 
 ```{r}
-FALL224753rich0142::ntickets(200,0.02,0.95)
+FALL224753rich0142::myboot2(x=rnorm(20,mean=10,sd=4))
 ```
 
 ## Fourth Function
@@ -55,4 +55,3 @@ This function gives the binomial distribution using the central limit theorem us
 ```{r}
 FALL224753rich0142::mycltb(4,10000,.3)
 ```
-
